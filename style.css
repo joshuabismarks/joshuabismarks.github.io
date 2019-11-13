@@ -17,12 +17,19 @@ header {
     max-width: 800px;
 }
 
-.grid-item {
-    max-width: 50%;
+.grid-sizer, .grid-item {
+    max-width: 33.333%;
     padding: 4px;
 }
 
 img {
     height: auto;
     max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .grid-sizer, .grid-item {
+        max-width: 50%;
+        padding: 4px;
+    }
 }
